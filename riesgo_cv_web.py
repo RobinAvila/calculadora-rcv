@@ -1,7 +1,8 @@
 import streamlit as st
 
 st.set_page_config(page_title="Calculadora RCV", layout="centered")
-st.title("Calculadora de Riesgo Cardiovascular CHILE-OT MINSAL 2017")
+st.title("Calculadora de Riesgo Cardiovascular para Población Chilena")
+st.markdown("<p style='color:gray; font-size:0.9em;'>Basada en tablas de Framingham adaptadas a la población chilena – Orientación Técnica Programa Cardiovascular – MINSAL 2017</p>", unsafe_allow_html=True)
 
 # --- Layout vertical completo ---
 st.subheader("1. Criterios de RCV ALTO (cualquiera clasifica automáticamente)")
@@ -61,6 +62,8 @@ def clasificar_col(c):
 from tablas_riesgo_code import tablas_riesgo
 
 # --- Botón de cálculo ---
+
+st.markdown("<p style='text-align: center; color: gray; font-size: 0.8em;'>Desarrollado por Dr. Robinson Ávila V. con ayuda de ChatGPT – Abril de 2025</p>", unsafe_allow_html=True)
 if st.button("Calcular riesgo"):
     causas_alto = []
     if ecv: causas_alto.append("ECV aterosclerótica")
@@ -123,7 +126,7 @@ if st.button("Calcular riesgo"):
                 color = "🔴"
 
         # Resultado final
-        resumen = f"RCV según tablas adaptadas MINSAL OT 2017: Base {riesgo:.1f}% {cor_hdl}"
+        resumen = f"RCV según tablas adaptadas: Base {riesgo:.1f}% {cor_hdl}"
         if factores_extra:
             resumen += " + " + " y ".join(factores_extra)
         else:
