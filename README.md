@@ -33,4 +33,4 @@ Haz clic en el siguiente enlace para abrir la app en tu navegador:
 **Dr. Robinson Ávila Valenzuela**  
 Médico General – Atención Primaria de Salud  
 CESFAM Dr. Carlos Díaz Gidi, San Javier – Chile  
-_Abril 2025, en colaboración con ChatGPT_
+_Abril 2025, con ayuda de ChatGPT_
