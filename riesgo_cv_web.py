@@ -25,7 +25,7 @@ hdl = st.number_input("Colesterol HDL (mg/dL):", min_value=10, max_value=100, va
 # --- Modificadores adicionales ---
 st.subheader("3. Factores que aumentan la categoría de riesgo")
 familiar = st.checkbox("ECV prematura en familiar de 1º grado")
-st.markdown("**Síndrome metabólico – selecciona ≥3 criterios:**")
+st.markdown("**Síndrome metabólico – ≥3 criterios:**")
 c3, c4 = st.columns(2)
 with c3:
     cc = st.checkbox("CC elevada: ≥90cm (H) o ≥80cm (M)")
